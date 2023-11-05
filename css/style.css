@@ -112,7 +112,7 @@ body {
 
 
 .sec__grant {  
-    height:100vh; 
+    height: 1000px; 
 }
 
 .grant__content {
@@ -217,6 +217,13 @@ body {
 
 
 
+.new__content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 
 
@@ -227,6 +234,9 @@ body {
 
 
 @media screen and (max-width: 1000px) {
+    .sec__grant {
+        height: 1560px;
+    }
     .grant__list {
         grid-template-columns: 1fr 1fr;
     }
@@ -265,6 +275,10 @@ body {
         margin-top: 20px;
         flex-direction: column;
         gap: 25px;
+    }
+
+    .sec__grant {
+        height: 2120px;
     }
 
     .sec__header {
