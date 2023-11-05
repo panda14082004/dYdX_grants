@@ -162,7 +162,8 @@ body {
 .grant__list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 20px;
+    margin-top: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -225,7 +226,11 @@ body {
 
 
 
-
+@media screen and (max-width: 1000px) {
+    .grant__list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 @media screen and (max-width: 870px) {
     .header__btn__span {
@@ -279,5 +284,10 @@ body {
     }
     .sec__header__link {
         font-size: 16px;
+    }
+
+    .grant__list {
+        max-width: 280px;
+        grid-template-columns: 1fr;
     }
 }
